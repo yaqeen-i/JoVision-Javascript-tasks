@@ -1,5 +1,5 @@
-function hello() {
+function arrSum() {
     console.log("Hello World");
   }
   
-  document.getElementById("myButton").addEventListener("click", handleClick);
+  document.getElementById("myButton2").addEventListener("click", handleClick);
