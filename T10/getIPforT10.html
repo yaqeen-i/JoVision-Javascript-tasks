@@ -6,9 +6,9 @@
         <button id="fetch">Get IP</button>
         <script>
             document.getElementById("fetch").addEventListener("click", function(){
-                fetch("https://api.ipify.org/"/*?format=json*/)
-                .then(response => response.text()/*.json(), instead of .text()*/)
-                .then(data => console.log(data))
+                fetch("https://api.ipify.org/")
+                .then(response => response.text())
+                .then(data =>  {document.getElementById('fetch').innerText = data;})
                 .catch(error => console.error('Error:', error));
             });
             
