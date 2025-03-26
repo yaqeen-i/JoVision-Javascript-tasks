@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7, Time</title>
+</head>
+<body>
+    <p id ="time"> </p>
+    <script>
+    setInterval(myTimer, 1000);
+    function myTimer() {
+    const date = new Date();
+    document.getElementById("time").innerHTML = date.toLocaleTimeString();
+    }
+    </script>
+</body>
+</html>
